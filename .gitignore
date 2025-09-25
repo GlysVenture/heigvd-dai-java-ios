@@ -11,6 +11,7 @@
 .idea/jarRepositories.xml
 .idea/modules.xml
 .idea/workspace.xml
+.idea/misc.xml
 *.iws
 *.iml
 *.ipr
