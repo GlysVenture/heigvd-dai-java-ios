@@ -3,6 +3,7 @@ package ch.heigvd.ios.text;
 import ch.heigvd.ios.Readable;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /**
  * A class that reads text files. This implementation reads the file byte per byte. It manages the
@@ -15,7 +16,7 @@ public class TextFileReader implements Readable {
       FileReader in = null;
 
       try {
-          in = new FileReader(filename);
+          in = new FileReader(filename, StandardCharsets.UTF_8);
           while (in.read() != -1);
       } catch (IOException e) {
           System.err.println("Exception: " + e);

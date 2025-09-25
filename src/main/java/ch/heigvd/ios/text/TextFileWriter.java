@@ -3,6 +3,7 @@ package ch.heigvd.ios.text;
 import ch.heigvd.ios.Writable;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /**
  * A class that writes text files. This implementation write the file byte per byte. It manages the
@@ -15,7 +16,7 @@ public class TextFileWriter implements Writable {
       FileWriter out = null;
 
       try {
-          out = new FileWriter(filename);
+          out = new FileWriter(filename, StandardCharsets.UTF_8);
           while (sizeInBytes > 0) {
               out.write(42);
               sizeInBytes--;
