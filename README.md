@@ -1,5 +1,20 @@
-# Java IOs - Practical content template
+# Java IOs
 
-This repository contains the template to the
-[Java IOs](https://github.com/heig-vd-dai-course/heig-vd-dai-course/tree/main/05-java-ios)
-practical content.
+## Benchmarks
+
+### Write
+| bytes_written   | 100 | 1K  | 10K | 100K | 1M   | 10M   | 100M   |
+|-----------------|-----|-----|-----|------|------|-------|--------|
+| BINARY          | 130 | 133 | 167 | 444  | 3280 | 32804 | 319051 |
+| BUFFERED_BINARY | 133 | 129 | 138 | 134  | 138  | 194   | 728    |
+| TEXT            | 154 | 146 | 133 | 147  | 173  | 407   | 2239   |
+| BUFFERED_TEXT   | 133 | 130 | 135 | 131  | 152  | 204   | 738    |
+
+### Read
+| bytes_read      | 100 | 1K  | 10K | 100K | 1M  | 10M  | 100M  |
+|-----------------|-----|-----|-----|------|-----|------|-------|
+| BINARY          | 132 | 133 | 136 | 187  | 817 | 6916 | 70119 |
+| BUFFERED_BINARY | 127 | 132 | 129 | 130  | 144 | 172  | 605   |
+| TEXT            | 131 | 133 | 136 | 160  | 148 | 274  | 1412  |
+| BUFFERED_TEXT   | 135 | 138 | 133 | 132  | 152 | 185  | 632   |
+
